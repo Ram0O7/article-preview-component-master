@@ -27,18 +27,36 @@
       </p>
       <div class="profile-info">
         <div class="info">
-        <div class="img-container">
-          <img src="images/avatar-michelle.jpg" alt="profile avatar">
+          <div class="img-container">
+            <img src="images/avatar-michelle.jpg" alt="profile avatar">
+          </div>
+          <div>
+            <p>Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
         </div>
-        <div>
-          <p>Michelle Appleton</p>
-          <p>28 Jun 2020</p>
+        <div id="share-icon">
+          <div class="share-options show">
+            <span>SHARE</span>
+            <img class="share-img" src="images/icon-facebook.svg" alt="facebook">
+            <img class="share-img" src="images/icon-twitter.svg" alt="twitter">
+            <img class="share-img" src="images/icon-pinterest.svg" alt="icon-pinterest">
+          </div>
+          <img id="share-img" src="images/icon-share.svg" alt="share">
         </div>
-        </div>
-        <img id="share-icon" src="images/icon-share.svg" alt="share">
       </div>
     </div>
   </main>
+
+  <script>
+    const share = document.querySelector('.show');
+    const shareBtn = document.getElementById('share-img');
+
+    shareBtn.addEventListener('click', () => {
+      share.classList.toggle('show');
+    });
+
+  </script>
 </body>
 
 </html>
