@@ -21,7 +21,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #ccc;
+    background-color: var(--GBlue);
 }
 
 #main-content {
@@ -99,14 +99,14 @@ body {
     border-radius: 8px;
     top: -55px;
     left: -65px;
-    display: none;
+    display: flex;
     width: 160px;
     justify-content: space-around;
     color: var(--LGBlue);
 }
 
 .show{
-    display: flex;
+    display: none;
 }
 
 @media (max-width:480px) {
